@@ -1,0 +1,642 @@
+@import url('https://fonts.googleapis.com/css2?family=Tilt+Neon&family=Tilt+Warp&display=swap');
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    background-color: #1B1B1B    ; 
+    font-family: "Tilt Warp";
+}
+html{
+    scroll-behavior: smooth;
+}
+.contenedor-header{
+    background-color: #1B1B1B    ;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 99;
+}
+.contenedor-header header{
+    max-width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+}
+.contenedor-header .nav-bar{
+    background: black;
+}
+.contenedor-header .nav-bar ul{
+    display: flex;
+    list-style: none;
+}
+.contenedor-header .nav-bar ul li a{
+    text-decoration: none;
+    text-align: none;
+    padding: 3px;
+    margin: 0px 40px;
+    font-size: 20px;
+    border-radius: 10px;
+    color: aliceblue;
+}
+.contenedor-header .nav-bar ul li a:hover{
+    color: #40C2AF    ;
+}
+.contenedor-header .nav-bar ul li:hover{
+    transform: scale(1.04);
+    translate: .3s;
+}
+.contenedor-header header .logoheader img{
+    width: 70px;
+}
+.inicio{
+    background-image: linear-gradient(to top, rgba(30,35,38,.8), rgba(30,35,38.1)), url(imagenes/Imagenes-fondo/imagen-inicio.jpg);
+    background-size: cover;
+    height: 100vh;
+    color: aliceblue;
+    display: flex;
+    align-items: center;
+}
+.inicio .card{
+   padding: 20px;
+   background-color:#353535;
+   margin: auto;
+   text-align: center;
+   border-radius: 40px;
+   max-width: 410px;
+}
+.inicio .card:hover{
+    border: 2px solid #40C2AF ;
+}
+.inicio .card img{
+    margin-top: 40px;
+    width: 250px;
+    border: 5px solid #40C2AF;
+    display: block;
+    margin: auto;
+    border-radius: 100%;
+    
+}
+.inicio .card h1{
+    color:  aliceblue;
+    margin: 20px;
+    font-size: 30px;
+    background-color: #353535;
+    font-family: "Tilt Warp";
+}
+.inicio .card h2{
+    color:  aliceblue;
+    font-family: "Tilt Neon";
+    background-color: #353535;
+    font-size: 15px;
+    margin: 1px;
+}
+.inicio .card .redes a{
+    color: white;
+    display: inline-block;
+    text-decoration: none;
+    border: 1px solid white;
+    border-radius: 100%;
+    width: 42px;
+    height: 42px;
+    line-height: 42px;
+    margin: 30px 10px;
+    font-size: 20px;
+}
+.inicio .card .redes, #iconos, .contenedor-bannerimg, #iconos-a{
+    background-color: #353535;
+}
+.inicio .card .redes #iconos-a:hover, #iconos:hover{
+    background-color: #40C2AF;
+}
+.contenedor-sobremi{
+    padding: 43px 0px;
+}
+.contenedor-sobremi .contenedor-presentacion h1{
+    color: white;
+    display: flex;
+    justify-content: center;
+    font-size: 60px;
+    margin: 30px;
+    margin-top:100px ;
+
+}
+.contenedor-sobremi .contenedor-presentacion p{
+    background-color: #1B1B1B;
+    color: white;
+    font-size: 25px;
+    padding-top: 20px;
+    padding-left: 70px;
+    padding-right: 70px;
+}
+.contenedor-sobremi .contenedor-presentacion mark{
+   color: #40C2AF ;
+}
+.contenedor-sobremi .contenedor-intereses {
+    display: flex;
+    color: white;
+    margin: 70px;
+    padding-top: 30px;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+.contenedor-skills{
+    width: 50%;
+    padding: 0px 0;
+    text-align: center;
+}
+.contenedor-skills p{
+    background-color: #1B1B1B;
+}
+.contenedor-skills h1{
+    text-align: center;
+    font-size: 40px;
+}
+.contenedor-skills .skill{
+    max-width: 600px;
+    margin: 10px auto;
+}
+.contenedor-skills .skill .informacion{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.contenedor-skills .skill .lista{
+    display: inline-block;
+    margin-right:20px;
+    height: 10px;
+    width: 10px;
+    background-color: #40C2AF;
+}
+.contenedor-skills .skill .barra{
+    background-color: #353535;
+    width: 100%;
+    height: 10px;
+    margin: 10px 0px;
+}
+.contenedor-skills .skill .barra .progreso1{
+    background-color: #40C2AF;
+    width: 90%;
+    height: 10px;
+    animation:2s progreso1 forwards;
+}
+@keyframes progreso1 {
+    0% {
+        width:0%;
+    }
+    100%{
+        width: 90%;
+    }
+}
+.contenedor-skills .skill .barra .progreso2{
+    background-color: #40C2AF;
+    width: 70%;
+    height: 10px;
+    animation: 2s progreso2 forwards;
+}
+@keyframes progreso2 {
+    0% {
+        width:0%;
+    }
+    100%{
+        width: 70%;
+    }
+}
+.contenedor-skills .skill .barra .progreso3{
+    background-color: #40C2AF;
+    width: 75%;
+    height: 10px;
+    animation: 2s progreso3 forwards;
+}
+@keyframes progreso3 {
+    0% {
+        width:0%;
+    }
+    100%{width: 75%;}
+}
+.contenedor-skills .skill .barra .progreso4{
+    background-color: #40C2AF;
+    width: 70%;
+    height: 10px;
+    animation: 2s progreso4 forwards;
+}
+@keyframes progreso4 {
+    0% {
+        width:0%;
+    }
+    100%{width: 70%;}
+}
+.contenedor-skills .skill .barra .progreso5{
+    background-color: #40C2AF;
+    width: 80%;
+    height: 10px;
+    animation: 2s progreso5 forwards;
+}
+@keyframes progreso5 {
+    0% {
+        width:0%;
+    }
+    100%{width: 80%;}
+}
+
+
+.contenedor-skills .skill .barra .progreso6{
+    background-color: #40C2AF;
+    width: 100%;
+    height: 10px;
+    animation:2s progreso6 forwards;
+}
+@keyframes progreso6 {
+    0% {
+        width:0%;
+    }
+    100%{
+        width: 100%;
+    }
+}
+.contenedor-skills .skill .barra .progreso7{
+    background-color: #40C2AF;
+    width: 100%;
+    height: 10px;
+    animation: 2s progreso7 forwards;
+}
+@keyframes progreso7 {
+    0% {
+        width:0%;
+    }
+    100%{
+        width: 100%;
+    }
+}
+.contenedor-skills .skill .barra .progreso8{
+    background-color: #40C2AF;
+    width: 100%;
+    height: 10px;
+    animation: 2s progreso8 forwards;
+}
+@keyframes progreso8 {
+    0% {
+        width:0%;
+    }
+    100%{width: 100%;}
+}
+.contenedor-skills .skill .barra .progreso9{
+    background-color: #40C2AF;
+    width: 100%;
+    height: 10px;
+    animation: 2s progreso9 forwards;
+}
+@keyframes progreso9 {
+    0% {
+        width:0%;
+    }
+    100%{width: 1006
+}
+}
+.contenedor-skills .skill .barra .progreso10{
+    background-color: #40C2AF;
+    width: 100%;
+    height: 10px;
+    animation: 2s progreso10 forwards;
+}
+@keyframes progreso10 {
+    0% {
+        width:0%;
+    }
+    100%{width: 100%;}
+}
+.contenedor-skills .skill .barra .progreso11{
+    background-color: #40C2AF;
+    width: 100%;
+    height: 10px;
+    animation: 2s progreso11 forwards;
+}
+@keyframes progreso11 {
+    0% {
+        width:0%;
+    }
+    100%{width: 100%;}
+}
+.contenedor-skills .skill .barra .progreso12{
+    background-color: #40C2AF;
+    width: 100%;
+    height: 10px;
+    animation: 2s progreso12 forwards;
+}
+@keyframes progreso12 {
+    0% {
+        width:0%;
+    }
+    100%{width: 100%;}
+}
+.contenedor-formacion{
+    background-color: #27756A;
+    color: white;
+    padding: 120px 20px;
+}
+.contenedor-formacion .contenido-formacion{
+    max-width: 1100px;
+    margin: auto;
+}
+.contenedor-formacion h2{
+    font-size: 20px;
+    text-align: center;
+    padding: 30px 0;
+}
+.contenedor-formacion .fila{
+    display: flex;
+    justify-content: space-between;
+}
+.contenedor-formacion .fila .columna{
+    width: 49%;
+    padding: 0 20px;
+}
+.contenedor-formacion .fila .columna h3{
+    font-size: 28px;
+    margin-bottom: 25px;
+}
+.contenedor-formacion .fila .izquierda{
+    border-right: 2px solid gray;
+}
+.contenedor-formacion .fila .derecha{
+    border-left: 2px solid gray;
+}
+.contenedor-formacion .fila .item span, p, h4{
+    background-color: #353535;
+}
+.contenedor-formacion .fila .item {
+    padding: 25px;
+    margin-bottom: 30px;
+    background-color: #353535;
+    position: relative;
+}
+.contenedor-formacion .fila .item h4{
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+.contenedor-formacion .fila .item .lugar{
+    color: #40C2AF ;
+    font-size: 22px;
+    font-weight: bold;
+    display: block;
+}
+.contenedor-formacion .fila .item .fecha{
+    display: block;
+    color: #40C2AF;
+    margin-bottom: 10px;
+}
+.contenido-formacion .fila .item p{
+    line-height: 24px;
+}
+.contenido-formacion .fila .izq{
+    border-right: 2px solid #40C2AF;
+    margin-right:20px;
+}
+.contenido-formacion .fila .der{
+    border-left: 2px solid #40C2AF;
+    margin-left:20px;
+}
+.contenido-formacion .fila .item .contenedori{
+    height: 2px;
+    background-color: #40C2AF;
+    width: 48px;
+    position: absolute;
+    top: 50%;
+    right: -48px;
+    z-index: 4;
+}
+.contenido-formacion .fila .item .contenedori .circuloi{
+    display: block;
+    height: 10px;
+    width: 10px;
+    border-radius: 50%;
+    background-color: #40C2AF;
+    float: right;
+    position: relative;
+    bottom: 4px;
+}
+.contenido-formacion .fila .item .contenedord{
+    height: 2px;
+    background-color: #40C2AF;
+    width: 48px;
+    position: absolute;
+    top: 50%;
+    left: -48px;
+    z-index: 4;
+}
+.contenido-formacion .fila .item .contenedord .circulod{
+    display: block;
+    height: 10px;
+    width: 10px;
+    border-radius: 50%;
+    background-color: #40C2AF;
+    float: left;
+    position: relative;
+    bottom: 4px;
+}
+#portfolio {
+    max-width: 1100px;
+    padding: 100px 0;
+    margin: auto;
+}
+#portfolio h4, p{
+background-color: transparent;
+}
+#portfolio .titulo-seccion {
+    text-align: center;
+    font-size: 30px;
+    text-transform: uppercase;
+    color: #40C2AF;
+    text-decoration: underline;
+    text-decoration-color: aliceblue;
+    text-decoration-thickness: 5px;
+}
+
+#portfolio .fila {
+    display: flex;
+    justify-content: space-between;
+    margin: 30px 0;
+}
+
+#portfolio .fila .proyecto {
+    max-width: 450px;
+    border: 1px solid #40C2AF;
+    margin: 0 10px;
+    position: relative;
+    overflow: hidden;
+}
+
+#portfolio .fila .proyecto img {
+    width: 100%;
+    height: 100%;
+    ;
+    filter: grayscale(1);
+    object-fit: cover;
+    transition: .5s;
+}
+
+#portfolio .fila .proyecto:hover img {
+    filter: grayscale(0);
+}
+
+#portfolio .fila .proyecto .info {
+    background-color: transparent;
+    position: absolute;
+    left: 0px;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: #40C2AF;
+    width: 100%;
+    padding: 10px;
+    opacity: 0;
+    bottom: -40px;
+    transition: .5s;
+}
+
+#portfolio .fila .proyecto:hover .info {
+    opacity: 1;
+    bottom: 0;
+}
+.contacto{
+    background-image: url(imagenes/Imagenes-fondo/fondo-contacto.jpg);
+    background-color: #353535;
+    color: aliceblue;
+    padding: 100px 0PX;
+}
+.contacto .contenido-contacto{
+    max-width: 1100px;
+    margin: auto;
+}
+.contacto h2{
+    font-size: 20px;
+    text-align: center;
+    padding: 30px 0;
+}
+.contacto .fila{
+    display: flex;
+    justify-content: center;
+}
+.contacto .columna{
+    width: 50%;
+    padding: 10px;
+    padding-left: 20px;
+    position: relative;
+}
+.contacto .columna2{
+    width: 50%;
+    padding: 10px;
+    position: relative;
+    align-items: center;
+}
+.contacto .columna2 .mapa{
+    padding-left: 13px;
+    width: 400px;
+    height: 300px;
+}
+.columna2 ul li{
+    margin: 12px auto;
+}
+.columna2 ul{
+    list-style: none;
+}
+.columna2 ul li span{
+    display: inline-block;
+    color: #40C2AF;
+    width: 120px;
+}
+.columna2 h1{
+    text-align: center;
+    font-size: 40px;
+    padding: 35px 0;
+}
+.columna2 h2{
+    color: #40C2AF;
+} 
+.columna2 a{
+    padding-left: 100px;
+    border: 10px;
+    border: #27756A;
+    text-decoration: none;
+    color: aliceblue;
+}
+.contacto .columna input, .contacto .columna textarea{
+    display: block;
+    width: 100%;
+    padding: 18px;
+    border: none;
+    margin-bottom: 20px;
+    background-color: #1B1B1B;
+    color: #40C2AF;
+    font-size: 20px;
+}
+.contacto button{
+    cursor: pointer;
+    background-color: transparent;
+    border: 2px solid #40C2AF;
+    width: 150px;
+    height: 40px;
+    display: block;
+    margin: 20px auto;
+    font-size: 15px;
+    color: aliceblue;
+    position: relative;
+    z-index: 10 ;
+}
+.contacto button:hover{
+    color: aliceblue;
+}
+.contacto button .overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background-color: #40C2AF;
+    z-index: -1;
+    transition: 1s;
+}
+.contacto button:hover .overlay{
+    width: 100%;
+}
+
+footer{
+    background-color: #1B1B1B;
+    color: aliceblue;
+    padding: 50px 0 30px 0;
+    text-align: center;
+    position: relative;
+    width: 100%;
+}
+footer .redes{
+    margin-bottom: 20px;
+}
+footer .redes a{
+    color: aliceblue;
+    display: inline-block;
+    text-decoration: none;
+    border: 1px solid aliceblue;
+    border-radius: 100%;
+    width: 42px;
+    height: 42px;
+    line-height: 42px;
+    margin: 40px 5px;
+    font-size: 20px;
+    transition: .3s;
+}
+footer .arriba{
+    display: block;
+    width: 50px;
+    height: 50px;
+    background-color: #40C2AF;
+    color: aliceblue;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: -25px;
+    border-radius: 50%;
+    line-height: 50px;
+    font-size: 18px;
+}
+footer .arriba i{
+    background-color: #40C2AF;
+}
